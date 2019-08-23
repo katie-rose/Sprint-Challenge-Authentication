@@ -5,7 +5,7 @@
 
 const jwt = require("jsonwebtoken");
 
-const secrets = require("../config/secrets.js");
+const secrets = require("../config/secrets");
 
 module.exports = (req, res, next) => {
   const token = req.headers.authorization;
@@ -20,6 +20,6 @@ module.exports = (req, res, next) => {
       }
     });
   } else {
-    res.status(400).json({ message: "bad panda, gimme token" });
+    res.status(400).json({ message: "No token found" });
   }
 };
