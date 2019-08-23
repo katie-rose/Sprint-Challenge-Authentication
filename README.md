@@ -38,13 +38,19 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is the purpose of using _sessions_?
+- [x] What is the purpose of using _sessions_?
+Restful APIs don't have a way of differentiating one request from another. Every request hitting the API must be authenticated individually. Sessions help enable the server to manage authentication.
 
-- [ ] What does bcrypt do to help us store passwords in a secure manner.
+- [x] What does bcrypt do to help us store passwords in a secure manner.
+bcrypt helps security by hashing our passwords before storing them in a database.
 
-- [ ] What does bcrypt do to slow down attackers?
+- [x] What does bcrypt do to slow down attackers?
+bcrypt uses a salt to hash passwords requiring a brute force attacker to create a rainbow table for each user record. Also, the bcrypt algorithm is made to be a bit slow and so this would slow down attackers using brute force.
 
-- [ ] What are the three parts of the JSON Web Token?
+- [x] What are the three parts of the JSON Web Token?
+- Header
+- Payload
+- Signature
 
 ## Minimum Viable Product
 
